@@ -1,0 +1,16 @@
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over selain
+selaimen lataamassa JavaScript-tiedostossa määritelty koodi
+hakee sivulta lomake-elementin ja rekisteröi sille tapahtumakäsittelijän
+hoitamaan tilanteen, missä lomake lähetetään
+
+Tapahtumakäsittelijä estää lomakkeen lähetyksen oletusarvoisen toiminnan
+jotta sivun uudelleenlatausta ei aiheudu
+
+Tapahtumakäsittelijä luo muistiinpanon ja lisää sen muistiinpanojen listaan
+piirttää muistiinpanojen listan uudelleen
+ja lähettää palvelimelle luodun muistiinpanon
+end note
+
+palvelin-->selain: {"message":"note created"}
